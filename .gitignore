@@ -1,0 +1,11 @@
+# Secrets & Config
+App.config
+
+# Visual Studio folders
+.vs/
+bin/
+obj/
+
+# User specific
+*.user
+*.suo

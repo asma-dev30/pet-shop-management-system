@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA063096-5578-4BC2-851B-E79B32EF70DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Online_Pet_Shop_Management_System</RootNamespace>
+    <AssemblyName>Online_Pet_Shop_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Employee.Designer.cs">
+      <DependentUpon>Add Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add New Pet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New Pet.Designer.cs">
+      <DependentUpon>Add New Pet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.cs" />
+    <Compile Include="Admin_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page.Designer.cs">
+      <DependentUpon>Admin_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Care service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Care service.Designer.cs">
+      <DependentUpon>Care service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Account Mangement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Account Mangement.Designer.cs">
+      <DependentUpon>Customer Account Mangement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Dashboard.Designer.cs">
+      <DependentUpon>Customer Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Signup.Designer.cs">
+      <DependentUpon>Customer Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers FeedBack.Designer.cs">
+      <DependentUpon>Customers FeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbConfig.cs" />
+    <Compile Include="Delete Or Update Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Or Update Employee.Designer.cs">
+      <DependentUpon>Delete Or Update Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Dashboard.Designer.cs">
+      <DependentUpon>Employee Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Customers.Designer.cs">
+      <DependentUpon>Manage Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Employs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Employs.Designer.cs">
+      <DependentUpon>Manage Employs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pet.cs" />
+    <Compile Include="PetsBought.cs" />
+    <Compile Include="Pets_Bought.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pets_Bought.Designer.cs">
+      <DependentUpon>Pets_Bought.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Update Pet Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Pet Details.Designer.cs">
+      <DependentUpon>Update Pet Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View  Appointment Request  Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View  Appointment Request  Status.Designer.cs">
+      <DependentUpon>View  Appointment Request  Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View All Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View All Customers.Designer.cs">
+      <DependentUpon>View All Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Available Pets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Available Pets.Designer.cs">
+      <DependentUpon>View Available Pets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Employs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Employs.Designer.cs">
+      <DependentUpon>View Employs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Pets By Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Pets By Customers.Designer.cs">
+      <DependentUpon>View Pets By Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Pets Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Pets Data.Designer.cs">
+      <DependentUpon>View Pets Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Services Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Services Request.Designer.cs">
+      <DependentUpon>View Services Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Sold Pets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Sold Pets.Designer.cs">
+      <DependentUpon>View Sold Pets.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Employee.resx">
+      <DependentUpon>Add Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add New Pet.resx">
+      <DependentUpon>Add New Pet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page.resx">
+      <DependentUpon>Admin_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Care service.resx">
+      <DependentUpon>Care service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Account Mangement.resx">
+      <DependentUpon>Customer Account Mangement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Dashboard.resx">
+      <DependentUpon>Customer Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Signup.resx">
+      <DependentUpon>Customer Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers FeedBack.resx">
+      <DependentUpon>Customers FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Or Update Employee.resx">
+      <DependentUpon>Delete Or Update Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Dashboard.resx">
+      <DependentUpon>Employee Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Customers.resx">
+      <DependentUpon>Manage Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Employs.resx">
+      <DependentUpon>Manage Employs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pets_Bought.resx">
+      <DependentUpon>Pets_Bought.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Update Pet Details.resx">
+      <DependentUpon>Update Pet Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View  Appointment Request  Status.resx">
+      <DependentUpon>View  Appointment Request  Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View All Customers.resx">
+      <DependentUpon>View All Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Available Pets.resx">
+      <DependentUpon>View Available Pets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Employs.resx">
+      <DependentUpon>View Employs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Pets By Customers.resx">
+      <DependentUpon>View Pets By Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Pets Data.resx">
+      <DependentUpon>View Pets Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Services Request.resx">
+      <DependentUpon>View Services Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Sold Pets.resx">
+      <DependentUpon>View Sold Pets.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
